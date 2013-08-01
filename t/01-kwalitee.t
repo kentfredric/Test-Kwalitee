@@ -36,8 +36,6 @@ my (@metrics) = qw(
     has_readme
     has_tests
     no_symlinks
-    proper_libs
-    no_pod_errors
     use_strict
 );
 
