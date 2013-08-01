@@ -25,6 +25,8 @@ my ($premature, @results) = run_tests(
         Test::Kwalitee->import;
     },
 );
+my @found_metrics = map { $_->{name} } @results;
+note(explain \@found_metrics );
 # this list reflects Module::CPANTS::Analyse 0.87
 my (@metrics) = qw(
     has_buildtool
