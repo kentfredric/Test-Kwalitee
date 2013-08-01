@@ -13,11 +13,9 @@ use Test::Kwalitee tests => [
             has_readme
             has_tests
             no_symlinks
-            proper_libs
-            no_pod_errors
         )
     ];
 
-Test::Builder->new->current_test == 7
-    or die 'ran ' . Test::Builder->new->current_test . ' tests; expected 7!';
+Test::Builder->new->current_test == 5
+    or die 'ran ' . Test::Builder->new->current_test . ' tests; expected 5!';
 
